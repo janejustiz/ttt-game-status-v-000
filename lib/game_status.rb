@@ -15,10 +15,8 @@ def won?(board)
     position_2 = board[win_index_2]
     position_3 = board[win_index_3]
       if position_1 == "X" && position_2 == "X" && position_3 == "X"
-        return "X"
         return win_combination
       elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
-        return "O"
           return win_combination
       end
     end
@@ -51,11 +49,9 @@ def over?(board)
 end
 
 def winner(board)
-  if won(board) == "X"
+  if win_combination[0] == "X"
     return "X"
-    if won(board) == "O"
-      return "O"
-  if won(board) == false
-    nil
+  elsif win_combination[0] == "O"
+    return "O"    
   end
 end
