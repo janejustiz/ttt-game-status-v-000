@@ -51,10 +51,10 @@ end
 def winner(board)
   if won?(board) == false
     nil
-  elsif won?(board).all? {|x| x == "O"
-    return "O"}
-  elsif won?(board).all? {|x| x == "X"
-    return "X"}
-
+  else won?(board).all? do |x|
+    if x == "O"
+      return "O"
+    elsif x == "X"
+      return "X"
   end
 end
