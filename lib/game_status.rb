@@ -54,7 +54,7 @@ def winner(board)
   else
     won?(board).each {|x|
       if board[x] == "X"
-        return X
+        return "X"
       elsif board[x] == "O"
         return "O"
       end
