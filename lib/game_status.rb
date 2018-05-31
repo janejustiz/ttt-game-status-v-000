@@ -49,10 +49,7 @@ def over?(board)
 end
 
 def winner(board)
-  won?(board)
-  if won?(board).any? == "X"
-    return "X"
-  elsif won?(board) == false
-    nil
+  if won?(board).any? == "O"
+    puts "O"
   end
 end
