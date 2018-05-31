@@ -28,9 +28,8 @@ def won?(board)
 end
 
 def full?(board)
-  board.any? {|x| x == "" || x == " " || x == nil
+  board.any? do |x| x == "" || x == " " || x == nil
     return false
-    }
   end
 end
 
