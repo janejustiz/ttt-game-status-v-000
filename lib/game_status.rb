@@ -49,13 +49,9 @@ def over?(board)
 end
 
 def winner(board)
-  won?(board).all? do |x|
-    if x == "O"
-      return "O"
-    elsif x == "X"
-      return "X"
-    else
-      return nil
-    end
-  end
+  if won?(board) == false
+    return nil
+  elsif won?(board).detect {|x| x == "X"}
+  elsif won?(board).detect {|x| x == "O"}
+end
 end
