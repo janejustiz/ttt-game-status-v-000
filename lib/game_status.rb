@@ -31,10 +31,9 @@ def full?(board)
   board.any? do |x|
     if x == "" || x == " " || x == nil
       return false
-    else
-      return true
     end
   end
+  return true
 end
 
 def draw?(board)
