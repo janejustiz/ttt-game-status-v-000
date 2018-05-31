@@ -56,5 +56,6 @@ def winner(board)
       return "O"
     elsif x == "X"
       return "X"
+    end
   end
 end
