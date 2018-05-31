@@ -27,7 +27,7 @@ end
 
 def full?(board)
   board.each |x|
-  if x==""|| x==" "|x==nil
+  if x == "" || x ==" " || x == nil
     false
   else
     true
