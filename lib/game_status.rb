@@ -49,14 +49,13 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board) == false
-    nil
-  elsif won?(board).all? do |x|
+  won?(board).all? do |x|
     if x == "O"
       return "O"
     elsif x == "X"
       return "X"
-    end
+    else
+      return false
     end
   end
 end
