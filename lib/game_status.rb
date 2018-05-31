@@ -51,9 +51,9 @@ end
 def winner(board)
   if won?(board) == false
     nil
-  elsif won?(board).any? {|x| x == "X"
+  elsif won?(board).each {|x| x == "X"
     return "X"}
-  elsif won?(board).any? {|x| x == "O"
+  elsif won?(board).each {|x| x == "O"
     return "O"}
   end
 end
