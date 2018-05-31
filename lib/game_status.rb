@@ -22,8 +22,7 @@ def won?(board)
         false
       end
     end
-  if WIN_COMBINATIONS!=true
-    false
+  retun false
 end
 
 def full?
