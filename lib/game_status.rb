@@ -16,12 +16,8 @@ def won?(board)
     position_3 = board[win_index_3]
       if position_1 == "X" && position_2 == "X" && position_3 == "X"
         return win_combination
-        break
       elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
           return win_combination
-          break
-      else
-        false
       end
     end
     return false
@@ -45,6 +41,7 @@ def draw?(board)
 end
 
 def over?(board)
+  if won?(board)==|| || 
 end
 
 def winner(board)
