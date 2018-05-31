@@ -51,7 +51,13 @@ end
 def winner(board)
   if won?(board) == false
     return nil
-  elsif won?(board).detect {|x| x == "X"}
-  elsif won?(board).detect {|x| x == "O"}
-end
+  else
+    won?(board).each {|x|
+      if board[x] == "X"
+        return X
+      elsif board[x] == "O"
+        return "O"
+      end
+    }
+  end
 end
