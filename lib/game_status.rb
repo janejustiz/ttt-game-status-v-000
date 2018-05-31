@@ -20,17 +20,19 @@ def won?(board)
           return win_combination
       else
         false
+        break
       end
     end
-  return false
 end
 
 def full?(board)
   board.each do |x|
     if x == "" || x == " " || x == nil
       false
+    else
+      true
+      break
     end
-    return true
   end
 end
 
