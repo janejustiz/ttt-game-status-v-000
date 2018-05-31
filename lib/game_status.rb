@@ -32,7 +32,7 @@ def full?(board)
     if x == "" || x == " " || x == nil
       return false
     else
-      return true
+      true
   end
 end
 
