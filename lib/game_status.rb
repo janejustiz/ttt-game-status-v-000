@@ -29,9 +29,8 @@ def full?(board)
   board.each do |x|
     if x == "" || x == " " || x == nil
       false
-    else
-      true
     end
+    return true
   end
 end
 
