@@ -33,6 +33,7 @@ def full?(board)
       return false
     else
       true
+    end
   end
 end
 
