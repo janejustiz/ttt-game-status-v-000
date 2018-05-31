@@ -53,7 +53,7 @@ def winner(board)
     nil
   elsif won?(board).any? do |x|
     board(x) == "O"
-    puts "O"
+    return "O"
     end
   end
 end
